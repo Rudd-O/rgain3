@@ -21,7 +21,7 @@ from typing import List
 from packaging.version import Version
 
 # a version must be PEP 440 compliant
-__version__ = Version("1.1.1")
+__version__ = Version("1.1.2")
 
 
 def requirements(filename: str) -> List[str]:
@@ -146,7 +146,7 @@ setup(
         "Topic :: Software Development :: Libraries :: Python Modules",
     ],
     long_description=__doc__,
-    packages=["rgain3"],
+    packages=["rgain3", "rgain3.lib"],
     console_entrypoints={
     },
     entry_points={
